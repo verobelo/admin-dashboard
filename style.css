@@ -1,45 +1,46 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat (5, 1fr);
+  grid-template-areas:
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main";
 }
 
-* {
-  margin: 0;
-  padding: 0;
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 3fr 3fr;
+  column-gap: 20px;
+  row-gap: 25px;
+}
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-html {
-  font-size: 100%;
+.sidebar__logo {
+  display: flex;
 }
 
-body {
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
+nav ul li {
+  display: flex;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
+.main__header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+.main__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
