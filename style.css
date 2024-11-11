@@ -71,6 +71,12 @@ body {
   gap: 1rem;
 }
 
+.sidebar__logo a {
+  color: #cbd5e1;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -98,7 +104,8 @@ nav ul li a {
   color: #cbd5e1;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+.sidebar__logo a:hover {
   color: #0ea5e9;
   transition: all ease 0.1s;
 }
