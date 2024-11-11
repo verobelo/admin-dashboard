@@ -21,7 +21,7 @@ body {
     "sidebar main";
   background-color: #1e293b;
   color: #cbd5e1;
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 .main__content {
@@ -63,6 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 1.25rem;
 }
 
 .sidebar__logo {
@@ -73,10 +74,22 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
 }
 
 nav ul li {
   display: flex;
+  gap: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.nav__primary,
+.nav__secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .main__header {
