@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Sen";
-  src: url("Sen-Regular.woff2") format("woff2"),
-    url("Sen-Regular.woff") format("woff");
+  font-family: "Space Grotesk";
+  src: url("assets/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("assets/SpaceGrotesk-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "Sen", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .wrapper {
@@ -68,6 +68,11 @@ body {
 .sidebar__logo {
   display: flex;
   gap: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul li {
