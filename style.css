@@ -21,6 +21,7 @@ body {
     "sidebar main";
   background-color: #1e293b;
   color: #cbd5e1;
+  padding: 1.25rem;
 }
 
 .main__content {
@@ -54,6 +55,7 @@ body {
 .main__icons {
   display: flex;
   align-self: flex-end;
+  gap: 1rem;
 }
 
 .sidebar {
@@ -65,6 +67,7 @@ body {
 
 .sidebar__logo {
   display: flex;
+  gap: 1rem;
 }
 
 nav ul li {
