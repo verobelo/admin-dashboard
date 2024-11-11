@@ -6,12 +6,16 @@
     "sidebar header"
     "sidebar main"
     "sidebar main";
+  background-color: #1e293b;
+  color: #cbd5e1;
 }
 
 .main__content {
   grid-area: main;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  column-gap: 1.25rem;
+  margin-top: 2rem;
 }
 
 .main__projects {
@@ -19,12 +23,24 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  column-gap: 20px;
-  row-gap: 20px;
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+}
+
+.main__card {
+  display: flex;
+  flex-direction: column;
 }
 
 .main__announcements {
   grid-column: 2 / 3;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.main__icons {
+  display: flex;
+  align-self: flex-end;
 }
 
 .sidebar {
@@ -47,4 +63,8 @@ nav ul li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
+}
+
+svg {
+  fill: #cbd5e1;
 }
