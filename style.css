@@ -83,6 +83,24 @@ nav ul li {
   gap: 1.25rem;
   font-size: 1.25rem;
   font-weight: 600;
+  width: 60%;
+  padding: 0.3rem;
+}
+
+nav ul li:hover {
+  background-color: #475569;
+  transition: all ease 0.1s;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+nav ul li a {
+  color: #cbd5e1;
+}
+
+nav ul li a:hover {
+  color: #0ea5e9;
+  transition: all ease 0.1s;
 }
 
 .nav__primary,
