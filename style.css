@@ -1,3 +1,10 @@
+:root {
+  --background-clr: #1e293b;
+  --text-clr: #cbd5e1;
+  --accent-clr: #0ea5e9;
+  --card-clr: #475569;
+}
+
 @font-face {
   font-family: "Space Grotesk";
   src: url("assets/SpaceGrotesk-Regular.woff2") format("woff2"),
@@ -19,8 +26,8 @@ body {
     "sidebar header"
     "sidebar main"
     "sidebar main";
-  background-color: #1e293b;
-  color: #cbd5e1;
+  background-color: var(--background-clr);
+  color: var(--text-clr);
   padding: 1rem;
 }
 
@@ -53,22 +60,22 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #475569;
+  background-color: var(--card-clr);
   gap: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  border-left: 5px solid #0ea5e9;
-  box-shadow: 1px 1px 5px #0ea5e9;
+  border-left: 5px solid var(--accent-clr);
+  box-shadow: 1px 1px 5px var(--accent-clr);
 }
 
 .main__card:hover {
   cursor: pointer;
-  box-shadow: 5px 5px 5px #0ea5e9;
+  box-shadow: 5px 5px 5px var(--accent-clr);
   transition: all ease 0.5s;
 }
 
 .main__icons a svg:hover {
-  fill: #0ea5e9;
+  fill: var(--accent-clr);
   transition: all ease 0.2s;
 }
 
@@ -91,25 +98,25 @@ main {
 }
 
 .main__announcements::-webkit-scrollbar-track {
-  background: #cbd5e1;
+  background: var(--text-clr);
   border-radius: 0.5rem;
 }
 
 .main__announcements::-webkit-scrollbar-thumb {
-  background: #0ea5e9;
+  background: var(--accent-clr);
   border-radius: 0.5rem;
 }
 
 .main__announcement {
   border-radius: 0.5rem;
-  border-bottom: 1px solid #475569;
-  border-top: 1px solid #475569;
-  border-right: 1px solid #475569;
-  border-left: 5px solid #0ea5e9;
+  border-bottom: 1px solid var(--card-clr);
+  border-top: 1px solid var(--card-clr);
+  border-right: 1px solid var(--card-clr);
+  border-left: 5px solid var(--accent-clr);
   padding: 0.5rem;
 }
 .main__announcement a {
-  color: #0ea5e9;
+  color: var(--accent-clr);
   font-weight: 600;
 }
 
@@ -133,7 +140,7 @@ main {
 }
 
 .sidebar__logo a {
-  color: #cbd5e1;
+  color: var(--text-clr);
   font-size: 2rem;
   font-weight: 600;
 }
@@ -155,19 +162,19 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: #475569;
+  background-color: var(--card-clr);
   transition: all ease 0.1s;
   cursor: pointer;
   border-radius: 1rem;
 }
 
 nav ul li a {
-  color: #cbd5e1;
+  color: var(--text-clr);
 }
 
 nav ul li a:hover,
 .sidebar__logo a:hover {
-  color: #0ea5e9;
+  color: var(--accent-clr);
   transition: all ease 0.1s;
 }
 
@@ -186,7 +193,7 @@ nav ul li a:hover,
 }
 
 svg {
-  fill: #cbd5e1;
+  fill: var(--text-clr);
 }
 
 .main__searchbar {
@@ -196,13 +203,13 @@ svg {
 
 .search-btn {
   border: none;
-  background-color: #1e293b;
+  background-color: var(--background-clr);
   padding: 0.2rem;
   cursor: pointer;
 }
 
 .search-btn svg:hover {
-  fill: #0ea5e9;
+  fill: var(--accent-clr);
   transition: all ease 0.1s;
 }
 
@@ -218,14 +225,14 @@ input[type="search"] {
 
 input[type="search"]:focus,
 input[type="search"]:focus-visible {
-  border: 2px solid #0ea5e9;
+  border: 2px solid var(--accent-clr);
   outline: none;
 }
 
 input[type="search"]:hover {
   cursor: text;
-  border: 2px solid #0ea5e9;
-  background-color: #cbd5e1;
+  border: 2px solid var(--accent-clr);
+  background-color: var(--text-clr);
   transition: all ease 0.1s;
 }
 input[type="search"]:focus::placeholder {
@@ -233,7 +240,7 @@ input[type="search"]:focus::placeholder {
 }
 
 input[type="search"]::placeholder {
-  color: #475569;
+  color: var(--card-clr);
 }
 
 .main__header {
@@ -272,13 +279,13 @@ input[type="search"]::placeholder {
 }
 
 .main__greeting-text a {
-  color: #cbd5e1;
+  color: var(--text-clr);
   text-decoration: underline;
   font-size: 1.2rem;
 }
 
 .main__greeting-text a:hover {
-  color: #0ea5e9;
+  color: var(--accent-clr);
   transition: all ease 0.1s;
 }
 
@@ -298,7 +305,7 @@ input[type="search"]::placeholder {
 
 .main__notifications svg:hover {
   cursor: pointer;
-  fill: #0ea5e9;
+  fill: var(--accent-clr);
   transform: scale(1.2);
   transition: all ease 0.1s;
 }
@@ -315,13 +322,13 @@ input[type="search"]::placeholder {
 }
 
 .main__profile a {
-  color: #cbd5e1;
+  color: var(--text-clr);
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .main__profile a:hover {
-  color: #0ea5e9;
+  color: var(--accent-clr);
   transition: all ease 0.1s;
 }
 
@@ -331,8 +338,8 @@ input[type="search"]::placeholder {
 }
 
 .main__buttons a {
-  color: #cbd5e1;
-  border: 2px solid #0ea5e9;
+  color: var(--text-clr);
+  border: 2px solid var(--accent-clr);
   border-radius: 1rem;
   padding: 0.5rem 1.5rem;
   font-weight: 600;
@@ -344,7 +351,7 @@ input[type="search"]::placeholder {
 }
 
 .main__buttons a:active {
-  background-color: #0ea5e9;
+  background-color: var(--accent-clr);
 }
 
 .main__trending {
@@ -359,6 +366,6 @@ input[type="search"]::placeholder {
 }
 
 .main__trend-info a {
-  color: #0ea5e9;
+  color: var(--accent-clr);
   font-weight: 600;
 }
