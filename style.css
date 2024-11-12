@@ -192,17 +192,17 @@ input[type="search"]::placeholder {
 
 .main__greeting {
   display: flex;
+  align-items: center;
   gap: 1.25rem;
 }
 
-.main__greeting img {
-  vertical-align: middle;
+.avatar {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
 }
 
-.main__greeting img:hover {
+.avatar:hover {
   cursor: pointer;
   transform: scale(1.2);
   transition: all ease 0.2s;
@@ -212,6 +212,7 @@ input[type="search"]::placeholder {
   display: flex;
   flex-direction: column;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .main__greeting-text a {
