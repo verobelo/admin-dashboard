@@ -26,6 +26,7 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
+  background-color: var(--background-clr);
 }
 
 .wrapper {
@@ -36,7 +37,6 @@ body {
     "sidebar header"
     "sidebar main"
     "sidebar main";
-  background-color: var(--background-clr);
   color: var(--text-clr);
   padding: var(--small);
 }
@@ -48,7 +48,6 @@ main {
 svg {
   width: 1.875rem;
   height: 1.875rem;
-  flex-shrink: 0;
   fill: var(--text-clr);
 }
 
@@ -73,6 +72,11 @@ svg {
   font-weight: var(--bold);
 }
 
+.sidebar__logo svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -81,12 +85,17 @@ nav {
 }
 
 nav ul li {
+  width: 60%;
+  padding: 0.3rem;
+}
+
+nav ul li a {
   display: flex;
+  align-items: center;
+  flex-shrink: 0;
   gap: var(--medium);
   font-size: var(--medium);
   font-weight: var(--bold);
-  width: 60%;
-  padding: 0.3rem;
 }
 
 nav ul li:hover {
