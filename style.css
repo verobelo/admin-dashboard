@@ -74,15 +74,30 @@ main {
 
 .main__announcements {
   grid-column: 2 / 3;
-  max-height: 80vh;
+  max-height: 90vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 0 0.5rem;
 }
 
 .main__announcements h2 {
   margin-bottom: 0;
+}
+
+.main__announcements::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+.main__announcements::-webkit-scrollbar-track {
+  background: #cbd5e1;
+  border-radius: 0.5rem;
+}
+
+.main__announcements::-webkit-scrollbar-thumb {
+  background: #0ea5e9;
+  border-radius: 0.5rem;
 }
 
 .main__announcement {
@@ -341,4 +356,9 @@ input[type="search"]::placeholder {
 .main__trend {
   display: flex;
   gap: 1.25rem;
+}
+
+.main__trend-info a {
+  color: #0ea5e9;
+  font-weight: 600;
 }
