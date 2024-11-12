@@ -192,13 +192,29 @@ input[type="search"]::placeholder {
 
 .main__greeting {
   display: flex;
+  gap: 1.25rem;
 }
 
 .main__greeting img {
-  align-self: center;
+  vertical-align: middle;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.main__greeting img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all ease 0.2s;
 }
 
 .main__greeting-text {
   display: flex;
   flex-direction: column;
+  font-weight: 600;
+}
+
+.main__greeting-text a {
+  color: #cbd5e1;
+  text-decoration: underline;
 }
