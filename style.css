@@ -121,9 +121,56 @@ nav ul li a:hover,
   grid-area: header;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
+  column-gap: 1.25rem;
 }
 
 svg {
   fill: #cbd5e1;
+}
+
+.main__searchbar {
+  display: flex;
+  width: 100%;
+}
+
+.search-btn {
+  border: none;
+  background-color: #1e293b;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.search-btn svg:hover {
+  fill: #0ea5e9;
+  transition: all ease 0.1s;
+}
+
+label[for="search"] {
+  width: 100%;
+}
+
+input[type="search"] {
+  border-radius: 1rem;
+  padding: 0.3rem;
+  width: 70%;
+}
+
+input[type="search"]:focus,
+input[type="search"]:focus-visible {
+  border: 2px solid #0ea5e9;
+  outline: none;
+}
+
+input[type="search"]:hover {
+  cursor: text;
+  border: 2px solid #0ea5e9;
+  background-color: #cbd5e1;
+  transition: all ease 0.1s;
+}
+input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
+input[type="search"]::placeholder {
+  color: #475569;
 }
