@@ -13,7 +13,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: repeat (3, 1fr);
   grid-template-areas:
     "sidebar header"
@@ -21,6 +21,10 @@ body {
     "sidebar main";
   background-color: #1e293b;
   color: #cbd5e1;
+  padding: 1rem;
+}
+
+main {
   padding: 1rem;
 }
 
@@ -64,6 +68,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.25rem;
+  border-right: 2px dotted #cbd5e1;
 }
 
 .sidebar__logo {
@@ -173,4 +178,27 @@ input[type="search"]:focus::placeholder {
 
 input[type="search"]::placeholder {
   color: #475569;
+}
+
+.main__header {
+  padding-top: 0.5rem;
+}
+
+.main__header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.main__greeting {
+  display: flex;
+}
+
+.main__greeting img {
+  align-self: center;
+}
+
+.main__greeting-text {
+  display: flex;
+  flex-direction: column;
 }
