@@ -57,6 +57,17 @@ main {
   box-shadow: 1px 1px 5px #0ea5e9;
 }
 
+.main__card:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #0ea5e9;
+  transition: all ease 0.5s;
+}
+
+.main__icons a svg:hover {
+  fill: #0ea5e9;
+  transition: all ease 0.2s;
+}
+
 .main__announcements {
   grid-column: 2 / 3;
   max-height: 80vh;
