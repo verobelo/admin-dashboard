@@ -45,6 +45,13 @@ main {
   padding: var(--small);
 }
 
+svg {
+  width: 1.875rem;
+  height: 1.875rem;
+  flex-shrink: 0;
+  fill: var(--text-clr);
+}
+
 /*Sidebar*/
 
 .sidebar {
@@ -114,10 +121,6 @@ nav ul li a:hover,
   grid-template-columns: repeat(2, 1fr);
   column-gap: var(--medium);
   padding-top: var(--xsmall);
-}
-
-svg {
-  fill: var(--text-clr);
 }
 
 .main__searchbar {
