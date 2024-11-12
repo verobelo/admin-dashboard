@@ -157,7 +157,7 @@ label[for="search"] {
 input[type="search"] {
   border-radius: 1rem;
   padding: 0.3rem;
-  width: 70%;
+  width: 100%;
 }
 
 input[type="search"]:focus,
@@ -215,7 +215,38 @@ input[type="search"]::placeholder {
   font-size: 1.2rem;
 }
 
+.main__greeting-text .user-name {
+  font-size: 1.5rem;
+}
+
 .main__greeting-text a {
   color: #cbd5e1;
   text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.main__header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+.main__notifications {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.main__profile {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.main__profile a {
+  color: #cbd5e1;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
