@@ -101,7 +101,7 @@ nav ul li {
 nav ul li a {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+
   gap: var(--medium);
   font-size: var(--medium);
   font-weight: var(--bold);
@@ -272,9 +272,11 @@ input[type="search"]::placeholder {
 .main__buttons a {
   color: var(--text-clr);
   border: 2px solid var(--accent-clr);
-  border-radius: var(--small);
-  padding: var(--xsmall) 1.5rem;
+  border-radius: var(--xsmall);
+  padding: 0.5rem 1rem;
   font-weight: var(--bold);
+  width: 6rem;
+  text-align: center;
 }
 
 .main__buttons a:hover {
@@ -421,8 +423,8 @@ input[type="search"]::placeholder {
   }
 
   .sidebar nav {
-    justify-content: space-between;
     height: 70vh;
+    gap: var(--big);
   }
 
   .sidebar nav ul li {
@@ -438,53 +440,32 @@ input[type="search"]::placeholder {
     display: none;
   }
 
-  .nav__primary,
-  .nav__secondary {
-    display: flex;
-    flex-direction: column;
-    gap: var(--medium);
-  }
-
   .nav__secondary {
     justify-content: center;
-  }
-
-  main {
-    grid-area: main;
-    padding: var(--small);
   }
 
   /*Main header*/
 
   .main__header {
-    grid-area: header;
     box-shadow: 1px 1px 5px var(--accent-clr);
     padding: var(--xsmall);
-    display: flex;
-    flex-direction: column;
     gap: var(--small);
     margin-bottom: var(--big);
     border-radius: var(--xsmall);
   }
 
   .main__header-top {
-    display: flex;
     justify-content: space-between;
     gap: var(--xsmall);
   }
 
-  .main__header-bottom {
-    display: flex;
+  .search-btn {
+    display: block;
   }
 
   .main__searchbar {
     flex: 1;
-    display: flex;
     align-items: center;
-  }
-
-  .search-btn {
-    display: none;
   }
 
   label[for="search"] {
@@ -492,9 +473,7 @@ input[type="search"]::placeholder {
   }
 
   input[type="search"] {
-    border-radius: 1rem;
     padding: 0.2rem;
-    width: 100%;
   }
 
   .main__greeting {
@@ -503,15 +482,11 @@ input[type="search"]::placeholder {
 
   .main__notifications {
     flex: 1;
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
     gap: var(--xsmall);
   }
 
   .main__profile {
-    display: flex;
-    align-items: center;
     gap: var(--xsmall);
   }
 
@@ -520,25 +495,17 @@ input[type="search"]::placeholder {
   }
 
   .main__buttons {
-    width: 100%;
-    display: flex;
     justify-content: space-around;
   }
 
   .main__buttons a {
-    color: var(--text-clr);
-    border: 2px solid var(--accent-clr);
-    border-radius: 0.5rem;
     padding: 0.2rem 0.5rem;
-    text-align: center;
-    font-weight: var(--bold);
     width: 5rem;
   }
 
   /*Main content*/
 
   .main__content {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
       "projects"
@@ -550,7 +517,7 @@ input[type="search"]::placeholder {
 
   .main__projects {
     grid-area: projects;
-    display: grid;
+
     grid-template-columns: auto;
     grid-template-rows: repeat(6, 1fr);
     row-gap: var(--xsmall);
@@ -560,72 +527,14 @@ input[type="search"]::placeholder {
     padding: var(--xsmall);
   }
 
-  .main__icons {
-    display: flex;
-    align-self: flex-end;
-    gap: var(--small);
-  }
-
   /*Main announcements & trending*/
 
   .main__announcements {
     grid-area: announcements;
-    max-height: 90vh;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: var(--small);
     padding: var(--xsmall);
-  }
-
-  .main__announcements::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-
-  .main__announcements::-webkit-scrollbar-track {
-    background: var(--text-clr);
-    border-radius: var(--xsmall);
-  }
-
-  .main__announcements::-webkit-scrollbar-thumb {
-    background: var(--accent-clr);
-    border-radius: var(--xsmall);
   }
 
   .main__announcement {
-    border-radius: var(--xsmall);
-    border-bottom: 1px solid var(--card-clr);
-    border-top: 1px solid var(--card-clr);
-    border-right: 1px solid var(--card-clr);
-    border-left: 5px solid var(--accent-clr);
-    padding: var(--xsmall);
     box-shadow: 1px 1px 5px var(--accent-clr);
-  }
-  .main__announcement a {
-    color: var(--accent-clr);
-    font-weight: var(--bold);
-  }
-
-  .main__trending {
-    display: flex;
-    flex-direction: column;
-    gap: var(--medium);
-  }
-
-  .main__trend {
-    display: flex;
-    gap: var(--medium);
-  }
-
-  .main__trend-info a {
-    color: var(--accent-clr);
-    font-weight: var(--bold);
-  }
-}
-
-@media (max-width: 320px) {
-  .wrapper {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "sidebar main";
   }
 }
