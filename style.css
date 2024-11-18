@@ -46,7 +46,7 @@ main {
 }
 
 svg {
-  width: 1.875rem;
+  width: 2.5rem;
   height: auto;
   fill: var(--text-clr);
 }
@@ -77,9 +77,13 @@ svg {
   font-weight: var(--bold);
 }
 
+.sidebar__logo span {
+  box-shadow: 1px 1px 5px var(--accent-clr);
+}
+
 .sidebar__logo svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .sidebar nav {
@@ -397,7 +401,6 @@ input[type="search"]::placeholder {
 
 @media (max-width: 768px) {
   .wrapper {
-    display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "sidebar main";
   }
@@ -405,13 +408,12 @@ input[type="search"]::placeholder {
   /*Sidebar*/
 
   .sidebar {
-    grid-area: sidebar;
     height: 100vh;
     position: sticky;
     top: 0;
     align-items: center;
     justify-content: space-around;
-    padding: var(--small);
+    padding: var(--xsmall);
   }
 
   .sidebar nav {
@@ -524,7 +526,9 @@ input[type="search"]::placeholder {
     border: 2px solid var(--accent-clr);
     border-radius: 0.5rem;
     padding: 0.2rem 0.5rem;
+    text-align: center;
     font-weight: var(--bold);
+    width: 5rem;
   }
 
   /*Main content*/
@@ -549,15 +553,7 @@ input[type="search"]::placeholder {
   }
 
   .main__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--card-clr);
-    gap: var(--small);
     padding: var(--xsmall);
-    border-radius: var(--xsmall);
-    border-left: 5px solid var(--accent-clr);
-    box-shadow: 1px 1px 5px var(--accent-clr);
   }
 
   .main__icons {
@@ -620,5 +616,12 @@ input[type="search"]::placeholder {
   .main__trend-info a {
     color: var(--accent-clr);
     font-weight: var(--bold);
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "sidebar main";
   }
 }
