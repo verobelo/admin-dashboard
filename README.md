@@ -1,5 +1,15 @@
 **_RESPOSIVE ADMIN DASHBOARD PROJECT_**
 
-This project forms part of The Odin Project Foundations curriculum. 
+This project forms part of The Odin Project Foundations curriculum.
 
-Live version: https://verobelo.github.io/admin-dashboard/
+**BUILT WITH**
+---------------------------------------------------------------------
+- HTML
+- CSS
+
+**TASKS**
+---------------------------------------------------------------------
+
+The main task of this project was to build an admin dashboard using Grid and Flexbox. Making it responsive was optional but achieved as well.
+
+**Live version:** https://verobelo.github.io/admin-dashboard/
