@@ -46,7 +46,7 @@ main {
 }
 
 svg {
-  width: 2.5rem;
+  width: 2rem;
   height: auto;
   fill: var(--text-clr);
 }
@@ -284,6 +284,10 @@ input[type="search"]::placeholder {
 
 .main__buttons a:active {
   background-color: var(--accent-clr);
+}
+
+.projects {
+  margin-top: var(--medium);
 }
 
 /*Main content*/
