@@ -34,17 +34,9 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: minmax(4rem, 1fr) 5fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "sidebar header"
-    "sidebar main"
-    "sidebar main";
+  grid-template-columns: minmax(4rem, 1fr) 4fr;
+  grid-template-areas: "sidebar main";
   color: var(--text-clr);
-  padding: var(--small);
-}
-
-main {
   padding: var(--small);
 }
 
@@ -410,7 +402,6 @@ input[type="search"]::placeholder {
 
 @media (max-width: 768px) {
   .wrapper {
-    /*grid-template-columns: 1fr 4fr;*/
     grid-template-areas: "sidebar main";
   }
 
