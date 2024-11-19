@@ -8,11 +8,14 @@
   /*font-weight*/
   --bold: 600;
 
-  /*spacing*/
+  /*sizing & spacing*/
   --xsmall: 0.5rem;
   --small: 1rem;
   --medium: 1.25rem;
   --big: 2rem;
+
+  /*transition*/
+  --transition: all ease 0.2s;
 }
 
 @font-face {
@@ -109,9 +112,9 @@ nav ul li a {
 
 nav ul li:hover {
   background-color: var(--card-clr);
-  transition: all ease 0.1s;
+  transition: var(--transition);
   cursor: pointer;
-  border-radius: var(--small);
+  border-radius: var(--xsmall);
 }
 
 nav ul li a {
@@ -121,7 +124,7 @@ nav ul li a {
 nav ul li a:hover,
 .sidebar__logo a:hover {
   color: var(--accent-clr);
-  transition: all ease 0.1s;
+  transition: var(--transition);
 }
 
 .nav__primary,
@@ -163,7 +166,7 @@ nav ul li a:hover,
 
 .search-btn svg:hover {
   fill: var(--accent-clr);
-  transition: all ease 0.1s;
+  transition: var(--transition);
 }
 
 label[for="search"] {
@@ -171,7 +174,7 @@ label[for="search"] {
 }
 
 input[type="search"] {
-  border-radius: var(--small);
+  border-radius: var(--xsmall);
   padding: 0.3rem;
   width: 100%;
 }
@@ -186,7 +189,7 @@ input[type="search"]:hover {
   cursor: text;
   border: 2px solid var(--accent-clr);
   background-color: var(--text-clr);
-  transition: all ease 0.1s;
+  transition: var(--transition);
 }
 input[type="search"]:focus::placeholder {
   color: transparent;
@@ -205,7 +208,7 @@ input[type="search"]::placeholder {
 .avatar:hover {
   cursor: pointer;
   transform: scale(1.2);
-  transition: all ease 0.2s;
+  transition: var(--transition);
 }
 
 .main__greeting-text {
@@ -223,7 +226,7 @@ input[type="search"]::placeholder {
 
 .main__greeting-text a:hover {
   color: var(--accent-clr);
-  transition: all ease 0.1s;
+  transition: var(--transition);
 }
 
 .main__notifications {
@@ -236,7 +239,7 @@ input[type="search"]::placeholder {
   cursor: pointer;
   fill: var(--accent-clr);
   transform: scale(1.2);
-  transition: all ease 0.1s;
+  transition: var(--transition);
 }
 
 .main__profile {
@@ -258,7 +261,7 @@ input[type="search"]::placeholder {
 
 .main__profile a:hover {
   color: var(--accent-clr);
-  transition: all ease 0.1s;
+  transition: var(--transition);
 }
 
 .main__buttons {
@@ -281,7 +284,7 @@ input[type="search"]::placeholder {
 
 .main__buttons a:hover {
   transform: scale(1.2);
-  transition: all ease 0.3s;
+  transition: var(--transition);
 }
 
 .main__buttons a:active {
@@ -332,7 +335,7 @@ input[type="search"]::placeholder {
 .main__card:hover {
   cursor: pointer;
   box-shadow: 5px 5px 5px var(--accent-clr);
-  transition: all ease 0.5s;
+  transition: var(--transition);
 }
 
 .main__icons {
@@ -343,7 +346,7 @@ input[type="search"]::placeholder {
 
 .main__icons a svg:hover {
   fill: var(--accent-clr);
-  transition: all ease 0.2s;
+  transition: var(--transition);
 }
 
 /*Main Announcements & Trading*/
