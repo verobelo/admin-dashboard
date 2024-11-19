@@ -408,7 +408,7 @@ input[type="search"]::placeholder {
   /*Sidebar*/
 
   .sidebar {
-    height: 100vh;
+    height: 90vh;
     position: sticky;
     top: 0;
     align-items: center;
@@ -530,5 +530,31 @@ input[type="search"]::placeholder {
 
   .main__announcement {
     box-shadow: 1px 1px 5px var(--accent-clr);
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    grid-template-columns: minmax(3.5rem, 1fr) 2fr;
+    padding: var(--xsmall);
+  }
+
+  .sidebar__logo {
+    margin-bottom: var(--xsmall);
+  }
+  .sidebar__logo svg {
+    height: auto;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .main__content {
+    margin-top: var(--small);
+  }
+
+  .main__announcements::-webkit-scrollbar {
+    width: 0.5rem;
   }
 }
