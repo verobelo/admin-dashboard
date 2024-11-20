@@ -64,16 +64,19 @@ svg {
 .sidebar__logo {
   display: flex;
   gap: var(--small);
+  flex-shrink: 0;
 }
 
 .sidebar__logo a {
   color: var(--text-clr);
-  font-size: var(--big);
+  font-size: clamp(1.25rem, 1rem + 0.5vw, 2rem);
   font-weight: var(--bold);
+  align-self: center;
 }
 
 .sidebar__logo span {
   box-shadow: 1px 1px 5px var(--accent-clr);
+  flex-shrink: 0;
 }
 
 .sidebar__logo svg {
@@ -91,12 +94,13 @@ svg {
 nav ul li {
   width: 60%;
   padding: 0.3rem;
+  display: flex;
 }
 
 nav ul li a {
   display: flex;
   align-items: center;
-
+  flex-shrink: 0;
   gap: var(--medium);
   font-size: var(--medium);
   font-weight: var(--bold);
@@ -533,6 +537,11 @@ input[type="search"]::placeholder {
   }
 }
 
+@media (max-width: 425px) {
+  .search-btn {
+    display: none;
+  }
+}
 @media (max-width: 375px) {
   .wrapper {
     grid-template-columns: minmax(3.5rem, 1fr) 2fr;
@@ -556,5 +565,12 @@ input[type="search"]::placeholder {
 
   .main__announcements::-webkit-scrollbar {
     width: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .main__buttons a {
+    font-size: 0.9rem;
+    width: auto;
   }
 }
