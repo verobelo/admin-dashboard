@@ -408,6 +408,14 @@ input[type="search"]::placeholder {
   body {
     font-size: calc(1rem * 1.2);
   }
+
+  .wrapper {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .main__announcements {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
