@@ -69,7 +69,7 @@ svg {
 
 .sidebar__logo a {
   color: var(--text-clr);
-  font-size: clamp(1.25rem, 1rem + 0.5vw, 2rem);
+  font-size: clamp(1.25rem, 2rem, 3rem);
   font-weight: var(--bold);
   align-self: center;
 }
@@ -402,6 +402,12 @@ input[type="search"]::placeholder {
 .main__trend-info a {
   color: var(--accent-clr);
   font-weight: var(--bold);
+}
+
+@media (min-width: 1750px) {
+  body {
+    font-size: calc(1rem * 1.2);
+  }
 }
 
 @media (max-width: 768px) {
