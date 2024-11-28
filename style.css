@@ -424,6 +424,10 @@ input[type="search"]::placeholder {
   color: var(--accent-clr);
   font-weight: var(--bold);
 }
+.main__trend-info a:hover,
+.main__trend a:focus {
+  color: var(--text-clr);
+}
 
 @media (min-width: 109.375rem) {
   body {
