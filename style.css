@@ -404,6 +404,11 @@ input[type="search"]::placeholder {
   font-weight: var(--bold);
 }
 
+.main__announcement a:hover,
+.main__announcement a:focus {
+  color: var(--text-clr);
+}
+
 .main__trending {
   display: flex;
   flex-direction: column;
