@@ -27,6 +27,10 @@
   font-display: swap;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
   font-family: "Space Grotesk", sans-serif;
   background-color: var(--background-clr);
@@ -106,7 +110,8 @@ nav ul li a {
   font-weight: var(--bold);
 }
 
-nav ul li:hover {
+nav ul li:hover,
+nav ul li:focus {
   background-color: var(--card-clr);
   transition: var(--transition);
   cursor: pointer;
@@ -118,7 +123,9 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-.sidebar__logo a:hover {
+.sidebar__logo a:hover,
+nav ul li a:focus,
+.sidebar__logo a:focus {
   color: var(--accent-clr);
   transition: var(--transition);
 }
@@ -160,7 +167,8 @@ nav ul li a:hover,
   cursor: pointer;
 }
 
-.search-btn svg:hover {
+.search-btn svg:hover,
+.search-btn svg:focus {
   fill: var(--accent-clr);
   transition: var(--transition);
 }
@@ -181,7 +189,8 @@ input[type="search"]:focus-visible {
   outline: none;
 }
 
-input[type="search"]:hover {
+input[type="search"]:hover,
+input[type="search"]:focus {
   cursor: text;
   border: 2px solid var(--accent-clr);
   background-color: var(--text-clr);
@@ -201,7 +210,8 @@ input[type="search"]::placeholder {
   gap: var(--medium);
 }
 
-.avatar:hover {
+.avatar:hover,
+.avatar:focus {
   cursor: pointer;
   transform: scale(1.2);
   transition: var(--transition);
@@ -220,7 +230,8 @@ input[type="search"]::placeholder {
   font-size: 1.2rem;
 }
 
-.main__greeting-text a:hover {
+.main__greeting-text a:hover,
+.main__greeting-text a:focus {
   color: var(--accent-clr);
   transition: var(--transition);
 }
@@ -231,7 +242,8 @@ input[type="search"]::placeholder {
   gap: var(--medium);
 }
 
-.main__notifications svg:hover {
+.main__notifications svg:hover,
+.main__notifications svg:focus {
   cursor: pointer;
   fill: var(--accent-clr);
   transform: scale(1.2);
@@ -255,7 +267,8 @@ input[type="search"]::placeholder {
   font-weight: var(--bold);
 }
 
-.main__profile a:hover {
+.main__profile a:hover,
+.main__profile a:focus {
   color: var(--accent-clr);
   transition: var(--transition);
 }
@@ -278,7 +291,8 @@ input[type="search"]::placeholder {
   text-align: center;
 }
 
-.main__buttons a:hover {
+.main__buttons a:hover,
+.main__buttons a:focus {
   transform: scale(1.2);
   transition: var(--transition);
 }
@@ -328,7 +342,8 @@ input[type="search"]::placeholder {
   box-shadow: 1px 1px 5px var(--accent-clr);
 }
 
-.main__card:hover {
+.main__card:hover,
+.main__card:focus {
   cursor: pointer;
   box-shadow: 5px 5px 5px var(--accent-clr);
   transition: var(--transition);
@@ -340,7 +355,8 @@ input[type="search"]::placeholder {
   gap: var(--small);
 }
 
-.main__icons a svg:hover {
+.main__icons a svg:hover,
+.main__icons a svg:focus {
   fill: var(--accent-clr);
   transition: var(--transition);
 }
